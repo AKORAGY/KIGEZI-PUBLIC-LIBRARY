@@ -134,12 +134,6 @@
 </head>
 <body>
 
-  <!-- Profile UI -->
-  <div class="top-profile" id="userProfile" style="display: none;">
-    <a href="2id card.html"><img id="profilePic" class="profile-icon" src="" alt="Profile">
-    <div id="profileName" class="profile-name"></div></a>
-  </div>
-
   <div id="LIBRARY" class="book-section">
     <h1>
       <img src="1 LOGO.jpeg" alt="Library Badge" width="60px" />
@@ -166,20 +160,7 @@
   <footer> &copy; Designed by Johnson and Evalyn</footer>
 
   <script>
-    // Load user profile on page load
-    function showUserProfile() {
-      const img = localStorage.getItem("profileImage");
-      const name = localStorage.getItem("profileName");
-
-      if (!img || !name) {
-        window.location.href = "index.html"; // Redirect to login if no data
-        return;
-      }
-
-      document.getElementById("profilePic").src = img;
-      document.getElementById("profileName").textContent = name;
-      document.getElementById("userProfile").style.display = "block";
-    }
+    
 
     // Tab functionality
     function openTab(tabNumber) {
