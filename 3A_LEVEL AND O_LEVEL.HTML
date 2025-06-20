@@ -87,11 +87,11 @@
       transform: scale(1.05);
     }
 
-    /* A'LEVEL buttons (orange) */
+    /* A'LEVEL buttons (purple) */
     #alevel-buttons button {
       padding: 15px;
       font-size: 16px;
-      background-color: #FF7F50; /* Coral / Warm orange */
+      background-color: purple;
       color: white;
       border: solid;
       cursor: pointer;
@@ -100,7 +100,7 @@
     }
 
     #alevel-buttons button:hover {
-      background-color: #e5673c; /* Darker coral */
+      background-color: indigo;
       transform: scale(1.05);
     }
 
@@ -189,4 +189,11 @@
 
     const aLevelURLs = [
       "11BIO.HTML", "12PHY A.HTML", "21MTC A.HTML", "24ACHEM.HTML",
-      "23AGEO.HTML", "25AHIST.HTML", "14ECON.HTML", "
+      "23AGEO.HTML", "25AHIST.HTML", "14ECON.HTML", "13LIT.html"
+    ];
+
+    createButtons(oLevelSubjects, oLevelURLs, "olevel-buttons");
+    createButtons(aLevelSubjects, aLevelURLs, "alevel-buttons");
+  </script>
+</body>
+</html>
